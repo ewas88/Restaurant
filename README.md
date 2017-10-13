@@ -1,2 +1,2 @@
 # Restaurant
-HTML, CSS
+(HTML Project)
