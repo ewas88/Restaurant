@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo-bar">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Restaurant logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="section-contact-form">
+        <div class="section-contact-form-inner">
+            <h1 class="section-header">Write to us</h1>
+            <form action="" method="">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your e-mail address">
+                <textarea placeholder="Your message" rows="6"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <section class="section-map">
+        <h1 class="section-header">Where to find us</h1>
+        <p>
+            Restaurant PACIFIC <br>
+            200-342 31st Ave <br>
+            San Mateo, CA 94403 <br>
+        </p>
+        <div id="map" style="width:1000px;height:600px"></div>
+        <script>
+            function myMap() {
+                var uluru = {lat: 37.535852, lng: -122.306461};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
+                    center: uluru
+                });
+                var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                });
+            }
+        </script>
+    </section>
+</main>
+<footer>
+    PACIFIC RESTAURANT &copy; 2017 ALL RIGHTS RESERVED.
+</footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ6Jf275OjduxX2KX5ODhj8lSTuZ5fmJQ&callback=myMap"></script>
+</body>
+</html>

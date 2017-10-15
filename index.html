@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div>
+    <div class="logo-bar">
         <a href="index.html">
             <img src="images/logo.png" alt="Restaurant logo">
         </a>
     </div>
-    <div>
+    <div class="top">
         <h1>Hungry?</h1>
         <p>Come and try our awesome meals</p>
         <a href="">Read more</a>
@@ -22,19 +25,21 @@
             <li><a href="">ABOUT</a></li>
             <li><a href="">MENU</a></li>
             <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <section>
-        <h1>Welcome to our restaurant</h1>
-        <img src="images/danie_1.jpg" alt="Meal 1">
+    <section class="section-welcome">
+        <h1 class="section-header">Welcome to our restaurant</h1>
+        <img src="images/danie_1.jpg" alt="Meal 1" class="welcome-first-image">
         <img src="images/danie_2.jpg" alt="Meal 2">
+        <img src="images/danie_2.jpg" alt="Meal 2" class="welcome-first-image">
+        <img src="images/danie_1.jpg" alt="Meal 1">
     </section>
-    <section>
+    <section class="section-best-meals">
         <img src="images/ciastka.png" alt="Cookies">
-        <h1>Best meal in the city</h1>
+        <h1 class="section-header">Best meal in the city</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nisl eget ligula fringilla hendrerit quis
             ut quam. Nunc pulvinar augue urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
             cubilia Curae; Maecenas dignissim sapien sit amet ante tempor, sed commodo mi pretium. Ut vestibulum
@@ -49,15 +54,15 @@
             sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer non tristique dui. Duis
             dapibus nulla quis condimentum maximus.</p>
     </section>
-    <section>
-        <div>
+    <section class="section-offer">
+        <div class="section-offer-single">
             <img src="images/pizza.png" alt="Pizza">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, felis laoreet rutrum finibus, elit
                 dui consectetur velit, eu tincidunt libero lectus eget enim. Praesent hendrerit ac nisl sed malesuada.
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In sodales ut
                 nibh a commodo.</p>
         </div>
-        <div>
+        <div class="section-offer-single">
             <img src="images/pizza.png" alt="Pizza">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor, felis laoreet rutrum finibus, elit
                 dui consectetur velit, eu tincidunt libero lectus eget enim. Praesent hendrerit ac nisl sed malesuada.
@@ -65,15 +70,15 @@
                 nibh a commodo.</p>
         </div>
     </section>
-    <section>
-        <div>
+    <section class="section-newsletter">
+        <div class="section-newsletter-wrapper">
             <h2>Check our newsletter</h2>
             <form action="" method="">
                 <input type="email" id="email" placeholder="Type your e-mail here">
                 <button type="submit">Subscribe</button>
             </form>
         </div>
-        <div>
+        <div class="social-links">
             <a href=""><img src="images/pinterest.png"></a>
             <a href=""><img src="images/facebook.png"></a>
             <a href=""><img src="images/twitter.png"></a>
