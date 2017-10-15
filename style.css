@@ -1,11 +1,11 @@
 /*
 1. Reset
-2. Style globalne
-3. Typografia
-4. Kompomenty
-5. Naglowek
-6. Style glownych sekcji
-7. Stopka
+2. Global styles
+3. Fonts
+4. Components
+5. Header
+6. Main sections
+7. Footer
 */
 
 /*
@@ -56,7 +56,7 @@ table {
 }
 
 /*
-2. Style globalne
+2. Global styles
 */
 body {
 	background-color: #F4F3EF;
@@ -80,7 +80,7 @@ img {
 }
 
 /*
-3. Typografia
+3. Fonts
 */
 p {
 	font-size: 14px;
@@ -95,7 +95,7 @@ p {
 
 
 /*
-5. Naglowek
+5. Header
 */
 header {
 	text-align: center;
@@ -219,7 +219,7 @@ nav a {
 }
 
 /*
-6. Style glownych sekcji
+6. Main sections styles
 */
 .section-header {
 	padding: 42px 0 20px;
@@ -492,19 +492,54 @@ nav a {
 	}
 }
 
-/*@media screen and (min-width: 1024px) {*/
-	/*.section-map {*/
-		/*padding-top: 60px;*/
-	/*}*/
-/*}*/
 .section-map p {
 	font-size: 30px;
 	margin: 60px 0 100px;
 
 }
 
+.section-about {
+	padding-bottom: 60px;
+}
+
+.section-about img {
+	padding-top: 85px;
+	max-width: 10%;
+}
+
+@media screen and (min-width: 1024px) {
+	.section-about  {
+		padding-bottom: 90px;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+	.section-menu h1 {
+		font-size: 40px;
+	}
+}
+
+.section-menu table {
+	margin: 0 auto;
+}
+
+td {
+	padding: 42px 0 20px;
+	font-size: 18px;
+	width: 1%;
+}
+
+details summary::-webkit-details-marker {
+	display:none;
+}
+
+details > summary:first-of-type {
+	list-style-type: none;
+}
+
 /*
-7. Stopka
+7. Footer
 */
 footer {
 	padding: 20px 0;
